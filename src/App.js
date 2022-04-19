@@ -1,10 +1,16 @@
 import React from "react";
+import { BrowserRouter } from 'react-router-dom';
+
+import Routes from "./routes/routes";
+
+import Header from "./components/Header";
 
 function App() {
   return(
-    <div>
-      <h1>HELL0</h1>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes />
+    </BrowserRouter>
   );
 };
 
