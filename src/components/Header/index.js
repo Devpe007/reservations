@@ -18,7 +18,6 @@ function Header() {
           <span>0 reservas</span>
         </div>
       </Link>
-      <h1>HEADER COMPONENT</h1>
     </header>
   );
 };
