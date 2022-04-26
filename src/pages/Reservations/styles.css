@@ -1,0 +1,40 @@
+.title {
+  color: #ffffff;
+}
+
+.reservation {
+  padding: 20px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 4px;
+
+  background: #ffffff;
+}
+
+.reservation img {
+  height: 100px;
+}
+
+.reservation button {
+  border: 0;
+
+  background: #ffffff;
+}
+
+footer button {
+  padding: 10px;
+
+  display: flex;
+  margin-top: 10px;
+
+  border: 0;
+  border-radius: 4px;
+
+  text-transform: uppercase;
+
+  font-weight: bold;
+}
