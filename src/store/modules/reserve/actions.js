@@ -24,5 +24,5 @@ export function updateAmountReserve(id, amount) {
     type: 'UPDATE_RESERVE',
     id,
     amount,
-  }
+  };
 };
