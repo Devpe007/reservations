@@ -1,11 +1,19 @@
 import React from "react";
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import './styles.css';
 import { MdDelete } from 'react-icons/md';
 
 function Reservations() {
+  const dispatch = useDispatch();
   const reserves = useSelector(state => state.reserve);
+
+  function handleRemove(id) {
+    dispatch({
+      type: 'REMOVE_RESERVE',
+      id,
+    });
+  };
 
   return(
     <div>
@@ -22,7 +30,7 @@ function Reservations() {
   
           <button
             type="button"
-            onClick={() => {}}
+            onClick={() => handleRemove(reserve.id)}
           >
             <MdDelete
               size={20}
