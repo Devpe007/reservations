@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
 import './styles.css';
-import { MdDelete } from 'react-icons/md';
+import { MdDelete, MdAddCircle, MdRemoveCircle } from 'react-icons/md';
 
 import { removeReserve } from '../../store/modules/reserve/actions';
 
@@ -25,8 +25,29 @@ function Reservations() {
             alt={reserve.title} 
           />
           <strong>{reserve.title}</strong>
-          <span>Quantidade: {reserve.amount}</span>
-  
+
+          <div id="amount" >
+            <button
+              type="button"
+              onClick={() => {}}
+            >
+              <MdRemoveCircle
+                size={25}
+                color="#191919"
+              />
+            </button>
+            <input type="text" readOnly value={reserve.amount} />
+            <button
+              type="button"
+              onClick={() => {}}
+            >
+              <MdAddCircle
+                size={25}
+                color="#191919"
+              />
+            </button>
+          </div>
+
           <button
             type="button"
             onClick={() => handleRemove(reserve.id)}

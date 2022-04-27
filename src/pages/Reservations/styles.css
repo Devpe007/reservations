@@ -38,3 +38,19 @@ footer button {
 
   font-weight: bold;
 }
+
+.reservation #amount {
+  display: flex;
+  align-items: center;
+}
+
+.reservation #amount {
+  padding: 5px;
+
+  width: 45px;
+
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+
+  color: #242424;
+}
