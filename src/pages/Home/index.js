@@ -9,7 +9,7 @@ import api from '../../services/api';
 import { addReserveRequest } from '../../store/modules/reserve/actions';
 
 
-function Home() {
+function Home({ history }) {
   const dispatch = useDispatch();
 
   const [trips, setTrips] = useState([]);
@@ -25,6 +25,8 @@ function Home() {
 
   function handleAdd(id) {
     dispatch(addReserveRequest(id));
+
+    
   };
 
   return(
